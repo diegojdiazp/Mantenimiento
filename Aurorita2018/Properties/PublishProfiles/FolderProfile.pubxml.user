@@ -1,0 +1,822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Proyect\Aurorita2018\Mantenimiento\docs</_PublishTargetUrl>
+    <History>True|2022-05-10T04:03:38.4490918Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>05/10/2022 00:03:33</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>05/10/2022 00:03:33</publishTime>
+    </File>
+    <File Include="bin/Aurorita2018.dll">
+      <publishTime>05/10/2022 00:03:24</publishTime>
+    </File>
+    <File Include="bin/Aurorita2018.pdb">
+      <publishTime>05/10/2022 00:03:24</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Helpers.resources.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Mvc.resources.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Optimization.resources.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Razor.resources.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.resources.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/evohtmltopdf.dll">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="bin/evointernal.dat">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>05/09/2022 09:28:01</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>05/09/2022 09:28:01</publishTime>
+    </File>
+    <File Include="Content/css/.DS_Store">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/animate.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-datetimepicker.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-grid.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-grid.css.map">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-grid.min.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-grid.min.css.map">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-reboot.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-reboot.css.map">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-reboot.min.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-reboot.min.css.map">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-select.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.css.map">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.min.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.min.css.map">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/charts/chartist.min.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/cs-skin-elastic.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/flag-icon.min.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/font-awesome.min.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/lib/chosen/chosen-sprite%402x.png">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/lib/chosen/chosen-sprite.png">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/lib/chosen/chosen.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/lib/chosen/chosen.min.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/lib/datatable/buttons.bootstrap.min.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/lib/datatable/buttons.dataTables.min.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/lib/datatable/dataTables.bootstrap.min.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/lib/vector-map/jqvmap.min.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/normalize.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/pe-icon-7-filled.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/style.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/style.css.map">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/themify-icons.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/toastr.min.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/css/variables.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/codropsicons/codropsicons.eot">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/codropsicons/codropsicons.svg">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/codropsicons/codropsicons.ttf">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/codropsicons/codropsicons.woff">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/codropsicons/index.html">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/codropsicons/license.txt">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.eot">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.svg">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.ttf">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.woff">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.woff2">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/FontAwesome.otf">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/icomoon/icomoon.eot">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/icomoon/icomoon.svg">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/icomoon/icomoon.ttf">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/icomoon/icomoon.woff">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/icomoon/index.html">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/index.html">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/Pe-icon-7-filled.eot">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/Pe-icon-7-filled.svg">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/Pe-icon-7-filled.ttf">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/Pe-icon-7-filled.woff">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/themify.eot">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/themify.svg">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/themify.ttf">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fonts/themify.woff">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/fullcalendar.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/img/login-foto.jpg">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/img/login.jpg">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/img/logo.png">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/img/logokko.png">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/img/logoMenu.png">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/img/userIcon.png">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/ot8xml.htm">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/ot8xml_archivos/filelist.xml">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/ot8xml_archivos/otxml_7006_image001.png">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/ot8xml_archivos/otxml_7006_image002.png">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/ot8xml_archivos/otxml_7006_image003.png">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/ot8xml_archivos/otxml_7006_image004.png">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/09/2022 09:28:00</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>05/10/2022 00:03:27</publishTime>
+    </File>
+    <File Include="Scripts/alert.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-datetimepicker.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js.map">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js.map">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js.map">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js.map">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/calendar/fullcalendar-init.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/calendar/fullcalendar.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/chartjs.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/Controllers/metodos.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/Controllers/RegistrarEventos.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/dashboard.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/less.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart-js/Chart.bundle.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart-js/chartjs-init.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/chartist/chartist-plugin-legend.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/chartist/chartist.init.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/chartist/chartist.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/chartist/index.html">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/chosen/chosen.jquery.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/chosen/chosen.jquery.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/chosen/chosen.proto.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/chosen/chosen.proto.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/data-table/buttons.bootstrap.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/data-table/buttons.colVis.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/data-table/buttons.flash.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/data-table/buttons.html5.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/data-table/buttons.print.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/data-table/datatables-init.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/data-table/dataTables.bootstrap.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/data-table/dataTables.buttons.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/data-table/datatables.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/data-table/jquery-1.12.4.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/data-table/jquery.dataTables.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/data-table/jszip.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/data-table/pdfmake.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/data-table/vfs_fonts.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/flot-chart/curvedLines.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/flot-chart/excanvas.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/flot-chart/flot-chart-init.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/flot-chart/flot-tooltip/jquery.flot.tooltip.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/flot-chart/jquery.flot.categories.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/flot-chart/jquery.flot.crosshair.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/flot-chart/jquery.flot.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/flot-chart/jquery.flot.pie.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/flot-chart/jquery.flot.resize.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/flot-chart/jquery.flot.spline.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/flot-chart/jquery.flot.stack.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/flot-chart/jquery.flot.threshold.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/flot-chart/jquery.flot.time.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/gauge/gauge.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/gauge/gauge.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/gauge/raphael-2.1.4.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/gmap/gmap.init.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/gmap/gmapApi.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/gmap/gmaps.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/gmap/gmaps.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/moment/moment.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/peitychart/jquery.peity.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/peitychart/peitychart.init.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/sparkline/jquery.sparkline.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/country/jquery.vmap.algeria.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/country/jquery.vmap.argentina.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/country/jquery.vmap.brazil.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/country/jquery.vmap.europe.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/country/jquery.vmap.france.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/country/jquery.vmap.germany.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/country/jquery.vmap.greece.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/country/jquery.vmap.iran.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/country/jquery.vmap.iraq.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/country/jquery.vmap.russia.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/country/jquery.vmap.tunisia.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/country/jquery.vmap.turkey.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/country/jquery.vmap.usa.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/country/jquery.vmap.world.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/jquery.vmap.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/jquery.vmap.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/jquery.vmap.sampledata.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/lib/vector-map/vector.init.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/main.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/Menu/menu.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/modal.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/plugins.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/popper.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/selectFx.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/toastr.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/vendor/index.html">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/vendor/jquery-1.11.3.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/vendor/jquery-2.1.4.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/vendor/modernizr-2.8.3.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/weather/css/weather-icons.css">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/weather/fonts/weathericons-regular-webfont.eot">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/weather/fonts/weathericons-regular-webfont.svg">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/weather/fonts/weathericons-regular-webfont.ttf">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/weather/fonts/weathericons-regular-webfont.woff">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/weather/fonts/weathericons-regular-webfont.woff2">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/weather/js/jquery.simpleWeather.min.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/weather/js/weather-init.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Scripts/widgets.js">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Views/Home/Inicio.cshtml">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Views/Login/Index.cshtml">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Views/Procesos/PrevisualizarOT.cshtml">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Views/Procesos/RegistrarEvento.cshtml">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Views/Shared/_ModalGeneral.cshtml">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>05/09/2022 09:27:59</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/10/2022 00:03:25</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

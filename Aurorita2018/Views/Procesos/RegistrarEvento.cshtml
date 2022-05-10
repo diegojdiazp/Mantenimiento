@@ -1,0 +1,445 @@
+﻿@using Aurorita2018.Models
+
+@{
+    Layout = null;
+}
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registro | Cacao Real</title>
+    <meta name="description" content="Sistema de control de eventos de mantenimientos de la planta Procesadora Cacao Real. C.A. Venezuela">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="~/Content/img/logokko.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="/Content/css/normalize.css">
+
+    <link rel="stylesheet" href="/Content/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Content/css/themify-icons.css">
+    <link rel="stylesheet" href="/Content/css/pe-icon-7-filled.css">
+
+    <link href="/Scripts/weather/css/weather-icons.css" rel="stylesheet" />
+    <link href="/Content/css/toastr.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Content/css/style.css">
+    <link href="/Content/css/charts/chartist.min.css" rel="stylesheet">
+    <link href="/Content/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
+    <link href="/Content/css/bootstrap-datetimepicker.css" rel="stylesheet">
+
+
+    <style>
+        #weatherWidget .currentDesc {
+            color: #ffffff !important;
+        }
+
+        .traffic-chart {
+            min-height: 335px;
+        }
+
+        #flotPie1 {
+            height: 150px;
+        }
+
+            #flotPie1 td {
+                padding: 3px;
+            }
+
+            #flotPie1 table {
+                top: 20px !important;
+                right: -10px !important;
+            }
+
+        .chart-container {
+            display: table;
+            min-width: 270px;
+            text-align: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        #flotLine5 {
+            height: 105px;
+        }
+
+        #flotBarChart {
+            height: 150px;
+        }
+
+        #cellPaiChart {
+            height: 160px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Left Panel -->
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="~/Home/Inicio"><i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+                    </li>
+                    <li class="menu-title">Procesos</li><!-- /.menu-title -->
+                    <li>
+                        <a href="@Url.Action("RegistrarEvento","Procesos")" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Registrar Evento</a>
+                    </li>
+                    <li class="menu-title">Consultas</li><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa ti-agenda"></i>Consultas Historicas</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-table"></i><a href="tables-basic.html">Eventos por usuario</a></li>
+                            <li><i class="fa fa-table"></i><a href="tables-data.html">Eventos por zona</a></li>
+                            <li><i class="fa fa-table"></i><a href="tables-basic.html">Eventos por fecha</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart-o"></i>Estadisticas</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-table"></i><a href="tables-basic.html">Por Usuario</a></li>
+                            <li><i class="fa fa-table"></i><a href="tables-data.html">Por zona</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-title">Reportes</li><!-- /.menu-title -->
+
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Reportes</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Zonas</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Usuario</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Tipos de Fallas</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Falla por zona</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Tipos de Mantenimientos</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Mantenimientos por zona</a></li>
+                            <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Estado Eventos</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-title">Configuración</li><!-- /.menu-title -->
+
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa ti-settings"></i>Administrar</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-map-o"></i><a href="maps-gmap.html">Zonas</a></li>
+                            <li><i class="menu-icon fa fa-street-view"></i><a href="maps-vector.html">Usuarios</a></li>
+                            <li><i class="menu-icon fa fa-street-view"></i><a href="maps-vector.html">Notifciaciones</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-title">Extras</li><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-book"></i>Manuales</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-line-chart"></i><a href="charts-chartjs.html">Chart JS</a></li>
+                            <li><i class="menu-icon fa fa-area-chart"></i><a href="charts-flot.html">Flot Chart</a></li>
+                            <li><i class="menu-icon fa fa-pie-chart"></i><a href="charts-peity.html">Peity Chart</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel -->
+    <!-- Left Panel -->
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">
+            <div class="top-left">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./"><img src="~/Content/img/logoMenu.png" alt="Logo"></a>
+                    @*<a class="navbar-brand hidden" href="./"><img src="images/logo02.png" alt="Logo"></a>*@
+                    <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+            <div class="top-right">
+                <div class="header-menu">
+                    <div class="header-left">
+                        <div class="dropdown for-notification">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-bell"></i>
+                                <span class="count bg-danger">3</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                                <p class="red">You have 3 Notification</p>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-check"></i>
+                                    <p>Server #1 overloaded.</p>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-info"></i>
+                                    <p>Server #2 overloaded.</p>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-warning"></i>
+                                    <p>Server #3 overloaded.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="~/Content/img/userIcon.png" alt="User Avatar">
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="#"><i class="fa fa-user"></i>Mi Perfil</a>
+
+
+                            <a class="nav-link" href="#"><i class="fa fa-power-off"></i>Cerrar Sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header><!-- /header -->
+        <!-- Header-->
+        <div class="content">
+            <div class="animated fadeIn">
+
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Registro Eventos</strong> | Mantenimiento
+                            </div>
+                            <div class="card-body card-block">
+                                <form id="formEvento" action="Procesos/RegistroEvento" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                    <div class="row form-group">
+                                        <div class="col col-md-3">
+                                            <label class=" form-control-label">Operador:</label>
+                                        </div>
+                                        <div class="col-12 col-md-9">
+                                            <input type='text' id="Autor" class="form-control" name="Autor" readonly value="@ViewBag.UserAccount.Nombre" />
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3 col-lg-3">
+                                            <label class=" form-control-label">Fecha Ejecución:</label>
+                                        </div>
+                                        <div class='col-md-3 col-lg-3'>
+                                            <div class="form-group">
+                                                <label class="control-label" for="datepicker-start">Fecha Inicio:</label>
+                                                <div class='input-group date' id='datetimepicker6'>
+                                                    <input type='text' name="FechaInicio" class="form-control" readonly required />
+                                                    <span class="input-group-addon">
+                                                        <span class="fa fa-calendar"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-3 col-lg-3'>
+                                            <div class="form-group">
+                                                <label class="control-label" for="datepicker-start">Fecha Fin:</label>
+                                                <div class='input-group date' id='datetimepicker7'>
+                                                    <input type='text' name="FechaFin" class="form-control" readonly required />
+                                                    <span class="input-group-addon">
+                                                        <span class="fa fa-calendar"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-lg-3">
+                                            <label class="control-label" for="txtTiempoEmpleado">Tiempo empleado:</label>
+                                            <input type='text' id="txtTiempoEmpleado" name="TiempoEmpleado" class="form-control" readonly required />
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="select" class=" form-control-label">Tipo de Falla:</label></div>
+                                        <div class="col-6 col-md-3">
+                                            <select name="IdFalla" id="selectFalla" class="form-control" required>
+                                                @if (ViewBag.DropFallas != null)
+                                                {
+                                                    List<Aurorita2018.Models.DropDownList> DropDownFallaList = ViewBag.DropFallas;
+                                                    foreach (Aurorita2018.Models.DropDownList falla in DropDownFallaList)
+                                                    {
+                                                        <option value="@falla.IdDrop">@falla.ValorDrop</option>
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <option value="-1">"Sin Información"</option>
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="select" class=" form-control-label">Tipo de Mantenimiento:</label></div>
+                                        <div class="col-3 col-md-3">
+                                            <select name="IdMantenimiento" id="selectMantenimiento" class="form-control">
+                                                @if (ViewBag.DropMantenimiento != null)
+                                                {
+                                                    List<Aurorita2018.Models.DropDownList> DropDownMantenimientoList = ViewBag.DropMantenimiento;
+                                                    foreach (Aurorita2018.Models.DropDownList Mantenimiento in DropDownMantenimientoList)
+                                                    {
+                                                        <option value="@Mantenimiento.IdDrop">@Mantenimiento.ValorDrop</option>
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <option value="-1">Sin Información</option>
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="select" class=" form-control-label">Estado:</label></div>
+                                        <div class="col-3 col-md-3">
+                                            <select name="Status" id="selectEstado" class="form-control">
+                                                @if (ViewBag.DropEstados != null)
+                                                {
+                                                    List<Aurorita2018.Models.DropDownList> DropDownEstadoList = ViewBag.DropEstados;
+                                                    foreach (Aurorita2018.Models.DropDownList Estado in DropDownEstadoList)
+                                                    {
+                                                        <option value="@Estado.IdDrop">@Estado.ValorDrop</option>
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <option value="-1">"Sin Informacion"</option>
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="select" class=" form-control-label">Zona:</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <select name="IdZona" id="selectZonas" class="form-control">
+                                                @if (ViewBag.DropZonas != null)
+                                                {
+                                                    List<Aurorita2018.Models.DropDownList> DropDownZonasList = ViewBag.DropZonas;
+                                                    foreach (Aurorita2018.Models.DropDownList Zona in DropDownZonasList)
+                                                    {
+                                                        <option value="@Zona.IdDrop">@Zona.ValorDrop</option>
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <option value="-1">Sin Información</option>
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Descripcion Actividad Asignada:</label></div>
+                                        <div class="col-12 col-md-9"><textarea name="DescripcionEvento" id="textareaActividadAsignada" rows="9" placeholder="Area de Contenido..." class="form-control"></textarea></div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Descripcion de Actividad Realizada:</label></div>
+                                        <div class="col-12 col-md-9"><textarea name="ActividadRealizada" id="textareaActividadRealizada" rows="9" placeholder="Area de Contenido..." class="form-control"></textarea></div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Descripcion de Equipos y/o Herramientas Utilizadas:</label></div>
+                                        <div class="col-12 col-md-9"><textarea name="EquiposUtilizados" id="textareaEquiposUtilizados" rows="9" placeholder="Area de Contenido..." class="form-control"></textarea></div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Cantidad:</label></div>
+                                        <div class="col-12 col-md-9"><textarea name="Cantidad" id="textareaCantidad" rows="9" placeholder="Area de Contenido..." class="form-control"></textarea></div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Observaciones:</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <textarea name="Observaciones" id="textareaObservaciones" rows="9" placeholder="Area de Contenido..." class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="file-multiple-input" class=" form-control-label">Adjuntos:</label></div>
+                                        <div class="col-12 col-md-9"><input type="file" id="file-multiple-input" name="file-multiple-input" multiple="" class="form-control-file"></div>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type='text' id="idMasterNumber" class="invisible" name="Autor" readonly value="@ViewBag.MasterNumber" />
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type='text' id="idActividad" class="invisible" name="idActividad" readonly value="@ViewBag.IdActividad" />
+                                    </div>
+                                </form>
+
+
+                                @*<div class="row">
+                                        <div class="col-lg-4 col-md-4">
+                                            &nbsp;
+                                        </div>
+                                        <div class="col-8 col-lg-8 col-md-8">
+                                            <button id="btnGuardar" class="btn btn-primary btn-sm">
+                                                <i class="ti-save"></i>&nbsp; Guardar
+                                            </button>
+                                        </div>
+                                    </div>*@
+                                <button type="submit" id="btnGuardar" class="btn btn-primary btn-sm">
+                                    <i class="ti-save"></i>&nbsp; Guardar
+                                </button>
+                                <button id="btnOT" class="btn btn-primary btn-sm" disabled="@ViewBag.OtVisible">
+                                    <i class="ti-printer"></i>&nbsp; Generar OT
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div><!-- .animated -->
+        </div><!-- .content -->
+
+
+
+        <div class="clearfix"></div>
+
+        <footer class="site-footer">
+            <div class="footer-inner bg-white">
+                <div class="row">
+                    <div class="col-sm-6">
+                        Copyright &copy; Cacao Real
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <a href="#">Departamento de sistemas de Procesadora Cacao Real. C.A.</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div><!-- /#right-panel -->
+
+    <script src="/Scripts/jquery-3.3.1.js"></script>
+    <script src="/Scripts/popper.min.js"></script>
+    <script src="/Scripts/plugins.js"></script>
+    <script src="/Scripts/main.js"></script>
+    <script src="/Scripts/lib/chart-js/Chart.bundle.js"></script>
+
+    <!--Chartist Chart-->
+    <script src="/Scripts/lib/chartist/chartist.min.js"></script>
+    <script src="/Scripts/lib/chartist/chartist-plugin-legend.js"></script>
+
+    <script src="/Scripts/lib/moment/moment.js"></script>
+    <script src="/Scripts/jquery-3.3.1.js"></script>
+    <div id="container">
+
+
+    </div>
+    <input type="hidden" id="idUsuario" value="@Aurorita2018.Models.Seguridad.Sesion.idUsuario" />
+    <input type="hidden" id="nombreUsuario" value="@Aurorita2018.Models.Seguridad.Sesion.usuarioNombre" />
+    <input type="hidden" id="urlCuadroTareas" value="@Url.Action("CuadroTareas","Home")" />
+    <input type="hidden" id="urlEstadisticaMensual" value="@Url.Action("EstadisticaMensualEventos","Home")" />
+    <input type="hidden" id="urlEstadisticaPendientes" value="@Url.Action("EstadisticaPendientesUsuario","Home")" />
+    <input type="hidden" id="urlEstadisticaCulminados" value="@Url.Action("EstadisticaCulminadoUsuario","Home")" />
+
+    <div class="row justify-content-md-center" style="border: 1px solid;display:none;" id="notificacion_tiempo">
+        <p style="color:white;" id="msg_notificacion_tiempo"><font></font></p>
+    </div>
+</body>
+</html>
+@Scripts.Render("/Scripts/Controllers/RegistrarEventos.js")
+@Scripts.Render("/Scripts/bootstrap-datetimepicker.js")
+@Scripts.Render("/Scripts/toastr.min.js")
+@Scripts.Render("/Scripts/alert.js")
+@Scripts.Render("/Scripts/modal.js")

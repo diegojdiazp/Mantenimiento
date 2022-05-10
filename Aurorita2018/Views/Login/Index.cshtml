@@ -1,0 +1,93 @@
+﻿@model Aurorita2018.Models.CuentaUsuario
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sistema de Registro y control de Eventos de Mantenimiento">
+    <meta name="keywords" content="login, ingresar, inicio">
+    <title>Cacao Real</title>
+
+
+    <link href="/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/Site.css" rel="stylesheet" />
+    <link href="/Content/css/toastr.min.css" rel="stylesheet" />
+    <link href="/Content/css/theme.css" rel="stylesheet" />
+    <link href="/Content/css/font-face.css" />
+
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/jquery-3.3.1.js"></script>
+    <script src="/Scripts/toastr.min.js"></script>
+    <script src="/Scripts/main.js"></script>
+    <script src="/Scripts/calendar/fullcalendar-init.js"></script>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="~/Content/img/apple-touch-icon.png">
+    <link rel="icon" href="/Content/img/favicon.png">
+</head>
+<body>
+    <section class="login-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 login-sec">
+                    <div class="text-center">
+                        <img src="~/Content/img/logo.png" width="120px" />
+                    </div>
+                    <form class="login-form" action="/Login/ingreso" method="post">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="text-uppercase">Usuario</label>
+                            <input type="text" class="form-control" placeholder="" name="usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="text-uppercase">Contraseña</label>
+                            <input type="password" class="form-control" placeholder="" name="password">
+                        </div>
+                        <div class="form-check">
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-login">Ingresar</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="copy-text">Desarrollado por el departamento de sistemas de Cacao real. C.A. <i class="fa fa-heart"></i></div>
+                </div>
+                <div class="col-md-8 banner-sec">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="~/Content/img/login-foto.jpg" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <div class="banner-text">
+                                        <h2>Sistema de Mantenimiento</h2>
+                                        <p>Registro y control de eventos de mantenimiento de la planta Procesadora Cacao Real</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @{
+                    if (Model != null && Model.Usuario == "Error")
+                    {
+                        <script>
+                            toastr.error("Datos de Ingreso Invalidos.");
+                        </script>
+                    }
+                }
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+</html>
